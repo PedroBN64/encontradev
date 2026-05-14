@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EncontraDev | Landing Pages & Sites Profissionais</title>
+  <meta name="description" content="Colocamos o Seu Sonho na Internet. Landing Pages modernas, profissionais e que transformam visitantes em clientes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-mesh">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <span class="font-display font-700 text-white text-lg tracking-tight">Encontra-<span class="gradient-text">Dev</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#servicos" class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Serviços</a>
+        <a href="#beneficios" class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Benefícios</a>
+        <a href="#sobre" class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Sobre</a>
+        <a href="#planos" class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Planos</a>
+        <a href="#portfolio" class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Portfólio</a>
+        <a href="#contato" class="btn-primary px-5 py-2 rounded-full text-sm">Solicitar Orçamento</a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-white p-2" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden glass border-t border-white/5">
+      <div class="px-5 py-4 flex flex-col gap-4">
+        <a href="#servicos" class="text-slate-300 text-sm font-medium" onclick="closeMobileMenu()">Serviços</a>
+        <a href="#beneficios" class="text-slate-300 text-sm font-medium" onclick="closeMobileMenu()">Benefícios</a>
+        <a href="#sobre" class="text-slate-300 text-sm font-medium" onclick="closeMobileMenu()">Sobre</a>
+        <a href="#planos" class="text-slate-300 text-sm font-medium" onclick="closeMobileMenu()">Planos</a>
+        <a href="#portfolio" class="text-slate-300 text-sm font-medium" onclick="closeMobileMenu()">Portfólio</a>
+        <a href="#contato" class="btn-primary px-5 py-2.5 rounded-full text-sm text-center" onclick="closeMobileMenu()">Solicitar Orçamento</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+    <!-- Grid background -->
+    <div class="absolute inset-0 grid-bg opacity-40"></div>
+    <!-- Glow orbs -->
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 rounded-full" style="background:radial-gradient(circle, rgba(14,165,233,0.12) 0%, transparent 70%); filter:blur(40px);"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-72 h-72 rounded-full" style="background:radial-gradient(circle, rgba(139,92,246,0.1) 0%, transparent 70%); filter:blur(40px);"></div>
+
+    <div class="max-w-7xl mx-auto px-5 w-full relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left content -->
+        <div>
+          <div class="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-6">
+            <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+            <span class="text-xs text-slate-300 font-medium">Disponível para novos projetos</span>
+          </div>
+          <h1 class="font-display text-5xl md:text-6xl xl:text-7xl font-800 leading-[1.05] mb-6">
+            Sua empresa<br />
+            <span class="gradient-text text-glow">Seu Sonho</span><br />
+            Online.
+          </h1>
+          <p class="text-slate-400 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">
+            Criamos Landing Pages modernas, profissionais e que <strong class="text-slate-200">transformam visitantes em clientes.</strong>
+          </p>
+          <div class="flex flex-wrap gap-4 mb-10">
+            <a href="#contato" class="btn-primary px-8 py-4 rounded-full text-base flex items-center gap-2">
+              Solicitar Orçamento
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#portfolio" class="btn-outline px-8 py-4 rounded-full text-base flex items-center gap-2">
+              Ver Projetos
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </a>
+          </div>
+          <!-- Social proof -->
+          <div class="flex items-center gap-4">
+            <div class="flex -space-x-2">
+              <div class="w-8 h-8 rounded-full border-2 border-navy-950 flex items-center justify-center text-xs font-bold" style="background:linear-gradient(135deg,#f59e0b,#ef4444);">M</div>
+              <div class="w-8 h-8 rounded-full border-2 border-navy-950 flex items-center justify-center text-xs font-bold" style="background:linear-gradient(135deg,#10b981,#0ea5e9);">J</div>
+              <div class="w-8 h-8 rounded-full border-2 border-navy-950 flex items-center justify-center text-xs font-bold" style="background:linear-gradient(135deg,#8b5cf6,#ec4899);">A</div>
+              <div class="w-8 h-8 rounded-full border-2 border-navy-950 flex items-center justify-center text-xs font-bold" style="background:linear-gradient(135deg,#0ea5e9,#8b5cf6);">R</div>
+            </div>
+            <div>
+              <div class="flex gap-0.5">
+                <span class="star text-sm">★★★★★</span>
+              </div>
+              <p class="text-xs text-slate-400">+50 clientes satisfeitos</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Mockup -->
+        <div class="relative flex justify-center items-center">
+          <!-- Main browser mockup -->
+          <div class="relative w-full max-w-md animate-float">
+            <div class="glass-strong rounded-2xl overflow-hidden glow-blue">
+              <!-- Browser bar -->
+              <div class="bg-white/5 px-4 py-3 flex items-center gap-2 border-b border-white/5">
+                <div class="flex gap-1.5">
+                  <div class="w-2.5 h-2.5 rounded-full bg-red-400/70"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-yellow-400/70"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-green-400/70"></div>
+                </div>
+                <div class="flex-1 bg-white/5 rounded-full px-3 py-1 text-xs text-slate-400 text-center">seusite.com.br</div>
+              </div>
+              <!-- Fake site content -->
+              <div class="p-5" style="background:linear-gradient(160deg,#040f28,#071535);">
+                <div class="mb-4">
+                  <div class="h-2 bg-azure-500/30 rounded w-1/3 mb-2"></div>
+                  <div class="h-5 rounded mb-1" style="background:linear-gradient(90deg,rgba(14,165,233,0.4),rgba(139,92,246,0.3)); width:80%;"></div>
+                  <div class="h-5 rounded mb-3" style="background:linear-gradient(90deg,rgba(14,165,233,0.3),rgba(139,92,246,0.2)); width:60%;"></div>
+                  <div class="h-2 bg-slate-700/50 rounded w-2/3 mb-1"></div>
+                  <div class="h-2 bg-slate-700/40 rounded w-1/2 mb-4"></div>
+                  <div class="flex gap-2">
+                    <div class="px-4 py-2 rounded-full text-xs font-bold" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8); color:white;">Saiba Mais</div>
+                    <div class="px-4 py-2 rounded-full text-xs border border-azure-500/40 text-azure-400">Ver Mais</div>
+                  </div>
+                </div>
+                <!-- Cards row -->
+                <div class="grid grid-cols-3 gap-2 mt-4">
+                  <div class="glass rounded-xl p-3 text-center">
+                    <div class="w-6 h-6 rounded-lg mx-auto mb-1" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8);"></div>
+                    <div class="h-1.5 bg-slate-600/50 rounded mx-auto w-8"></div>
+                  </div>
+                  <div class="glass rounded-xl p-3 text-center">
+                    <div class="w-6 h-6 rounded-lg mx-auto mb-1" style="background:linear-gradient(135deg,#8b5cf6,#ec4899);"></div>
+                    <div class="h-1.5 bg-slate-600/50 rounded mx-auto w-8"></div>
+                  </div>
+                  <div class="glass rounded-xl p-3 text-center">
+                    <div class="w-6 h-6 rounded-lg mx-auto mb-1" style="background:linear-gradient(135deg,#10b981,#0ea5e9);"></div>
+                    <div class="h-1.5 bg-slate-600/50 rounded mx-auto w-8"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Floating elements -->
+            <div class="absolute -top-4 -right-4 glass rounded-xl p-3 animate-float-delay">
+              <div class="flex items-center gap-2">
+                <div class="w-6 h-6 rounded-full flex items-center justify-center text-xs" style="background:linear-gradient(135deg,#10b981,#0ea5e9);">✓</div>
+                <div>
+                  <div class="text-xs font-semibold text-white">+127% leads</div>
+                  <div class="text-xs text-slate-400">este mês</div>
+                </div>
+              </div>
+            </div>
+            <div class="absolute -bottom-4 -left-4 glass rounded-xl p-3" style="animation: float 5s ease-in-out 1s infinite;">
+              <div class="flex items-center gap-2">
+                <span class="text-lg">🚀</span>
+                <div>
+                  <div class="text-xs font-semibold text-white">Site no ar</div>
+                  <div class="text-xs text-slate-400">em 5 dias</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Emotional proof bar -->
+      <div class="mt-16 pt-12 border-t border-white/5">
+        <p class="text-center text-slate-400 text-sm mb-6">Parceiros que confiam no trabalho</p>
+        <div class="flex flex-wrap justify-center items-center gap-8 opacity-40">
+          <span class="font-display font-bold text-lg text-slate-300">AcadeFit</span>
+          <span class="font-display font-bold text-lg text-slate-300">PizzaExpress</span>
+          <span class="font-display font-bold text-lg text-slate-300">HotelRio</span>
+          <span class="font-display font-bold text-lg text-slate-300">SkinClinic</span>
+          <span class="font-display font-bold text-lg text-slate-300">BarberKing</span>
+        </div>
+        <div class="mt-8 text-center">
+          <p class="text-slate-300 text-base md:text-lg italic font-light">
+            "Seu negócio merece ser <span class="text-azure-400 font-semibold not-italic">visto</span>, 
+            <span class="text-azure-400 font-semibold not-italic">lembrado</span> e 
+            <span class="text-azure-400 font-semibold not-italic">encontrado</span>."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: PARA QUEM É -->
+  <section id="servicos" class="py-24 bg-mesh-2 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 dot-grid opacity-20"></div>
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center mb-14 reveal">
+        <span class="section-tag">Para quem é</span>
+        <h2 class="font-display text-3xl md:text-5xl font-800 text-white mt-3 mb-4">
+          Qual é o <span class="gradient-text">Seu Negócio?</span>
+        </h2>
+        <p class="text-slate-400 text-lg max-w-xl mx-auto">Todo negócio merece uma presença digital profissional. Veja se você se encaixa:</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+        <!-- Card template -->
+        <div class="glass card-hover rounded-2xl p-5 text-center border border-white/5 reveal reveal-delay-1">
+          <div class="text-3xl mb-3">🏋️</div>
+          <h3 class="font-display font-700 text-white text-sm mb-1">Academia</h3>
+          <p class="text-slate-500 text-xs">Matrículas e planos online</p>
+        </div>
+        <div class="glass card-hover rounded-2xl p-5 text-center border border-white/5 reveal reveal-delay-2">
+          <div class="text-3xl mb-3">👗</div>
+          <h3 class="font-display font-700 text-white text-sm mb-1">Loja de Roupas</h3>
+          <p class="text-slate-500 text-xs">Catálogo e vendas digitais</p>
+        </div>
+        <div class="glass card-hover rounded-2xl p-5 text-center border border-white/5 reveal reveal-delay-3">
+          <div class="text-3xl mb-3">🍬</div>
+          <h3 class="font-display font-700 text-white text-sm mb-1">Loja de Doces</h3>
+          <p class="text-slate-500 text-xs">Cardápio e pedidos online</p>
+        </div>
+        <div class="glass card-hover rounded-2xl p-5 text-center border border-white/5 reveal reveal-delay-4">
+          <div class="text-3xl mb-3">🏨</div>
+          <h3 class="font-display font-700 text-white text-sm mb-1">Hotel</h3>
+          <p class="text-slate-500 text-xs">Reservas e apresentação</p>
+        </div>
+        <div class="glass card-hover rounded-2xl p-5 text-center border border-white/5 reveal reveal-delay-5">
+          <div class="text-3xl mb-3">🍕</div>
+          <h3 class="font-display font-700 text-white text-sm mb-1">Pizzaria</h3>
+          <p class="text-slate-500 text-xs">Cardápio e delivery</p>
+        </div>
+        <div class="glass card-hover rounded-2xl p-5 text-center border border-white/5 reveal reveal-delay-1">
+          <div class="text-3xl mb-3">✂️</div>
+          <h3 class="font-display font-700 text-white text-sm mb-1">Barbearia</h3>
+          <p class="text-slate-500 text-xs">Agendamentos online</p>
+        </div>
+        <div class="glass card-hover rounded-2xl p-5 text-center border border-white/5 reveal reveal-delay-2">
+          <div class="text-3xl mb-3">🏥</div>
+          <h3 class="font-display font-700 text-white text-sm mb-1">Clínica</h3>
+          <p class="text-slate-500 text-xs">Consultas e especialidades</p>
+        </div>
+        <div class="glass card-hover rounded-2xl p-5 text-center border border-white/5 reveal reveal-delay-3">
+          <div class="text-3xl mb-3">🍽️</div>
+          <h3 class="font-display font-700 text-white text-sm mb-1">Restaurante</h3>
+          <p class="text-slate-500 text-xs">Menu e reservas de mesa</p>
+        </div>
+        <div class="glass card-hover rounded-2xl p-5 text-center border border-white/5 reveal reveal-delay-4">
+          <div class="text-3xl mb-3">💅</div>
+          <h3 class="font-display font-700 text-white text-sm mb-1">Salão de Beleza</h3>
+          <p class="text-slate-500 text-xs">Serviços e agendamentos</p>
+        </div>
+        <div class="glass card-hover rounded-2xl p-5 text-center border border-white/5 reveal reveal-delay-5" style="background:linear-gradient(145deg,rgba(14,165,233,0.1),rgba(139,92,246,0.08)); border-color:rgba(14,165,233,0.25);">
+          <div class="text-3xl mb-3">✨</div>
+          <h3 class="font-display font-700 text-azure-400 text-sm mb-1">Seu Negócio</h3>
+          <p class="text-slate-400 text-xs">Qualquer segmento</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: BENEFÍCIOS -->
+  <section id="beneficios" class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 grid-bg opacity-20"></div>
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center mb-14 reveal">
+        <span class="section-tag">Por que ter um site?</span>
+        <h2 class="font-display text-3xl md:text-5xl font-800 text-white mt-3 mb-4">
+          Benefícios que <span class="gradient-text">Transformam</span>
+        </h2>
+        <p class="text-slate-400 text-lg max-w-xl mx-auto">Um site profissional não é um custo — é o melhor investimento para o seu negócio.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="glass card-hover rounded-2xl p-6 border border-white/5 reveal reveal-delay-1">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background:linear-gradient(135deg,rgba(14,165,233,0.25),rgba(14,165,233,0.1));">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <h3 class="font-display font-700 text-white text-base mb-2">Seu negócio no Google</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Apareça quando alguém buscar pelo que você oferece na sua cidade.</p>
+        </div>
+
+        <div class="glass card-hover rounded-2xl p-6 border border-white/5 reveal reveal-delay-2">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background:linear-gradient(135deg,rgba(139,92,246,0.25),rgba(139,92,246,0.1));">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="font-display font-700 text-white text-base mb-2">Mais credibilidade</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Clientes confiam mais em negócios com site profissional. Passe seriedade.</p>
+        </div>
+
+        <div class="glass card-hover rounded-2xl p-6 border border-white/5 reveal reveal-delay-3">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background:linear-gradient(135deg,rgba(16,185,129,0.25),rgba(16,185,129,0.1));">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3 class="font-display font-700 text-white text-base mb-2">Mais clientes</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Alcance clientes além do bairro. O Brasil inteiro pode te encontrar.</p>
+        </div>
+
+        <div class="glass card-hover rounded-2xl p-6 border border-white/5 reveal reveal-delay-4">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background:linear-gradient(135deg,rgba(251,191,36,0.25),rgba(251,191,36,0.1));">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3 class="font-display font-700 text-white text-base mb-2">Atendimento automático</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Seu site trabalha 24/7 apresentando seus serviços enquanto você descansa.</p>
+        </div>
+
+        <div class="glass card-hover rounded-2xl p-6 border border-white/5 reveal reveal-delay-1">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background:linear-gradient(135deg,rgba(37,211,102,0.25),rgba(37,211,102,0.1));">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#25d366" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 010 1.2 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg>
+          </div>
+          <h3 class="font-display font-700 text-white text-base mb-2">Integração WhatsApp</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Botão direto para o seu WhatsApp. O cliente clica e já fala com você.</p>
+        </div>
+
+        <div class="glass card-hover rounded-2xl p-6 border border-white/5 reveal reveal-delay-2">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background:linear-gradient(135deg,rgba(236,72,153,0.25),rgba(236,72,153,0.1));">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="font-display font-700 text-white text-base mb-2">Design profissional</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Visual moderno, limpo e que encanta desde o primeiro acesso.</p>
+        </div>
+
+        <div class="glass card-hover rounded-2xl p-6 border border-white/5 reveal reveal-delay-3">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background:linear-gradient(135deg,rgba(14,165,233,0.25),rgba(14,165,233,0.1));">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 class="font-display font-700 text-white text-base mb-2">Carregamento rápido</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Sites otimizados que carregam em segundos. Ninguém fica esperando.</p>
+        </div>
+
+        <div class="glass card-hover rounded-2xl p-6 border border-white/5 reveal reveal-delay-4">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background:linear-gradient(135deg,rgba(139,92,246,0.25),rgba(139,92,246,0.1));">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3 class="font-display font-700 text-white text-base mb-2">Responsivo para celular</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Perfeito em qualquer tela — celular, tablet ou computador.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: SOBRE MIM -->
+  <section id="sobre" class="py-24 bg-mesh-2 relative overflow-hidden">
+    <div class="absolute bottom-0 left-0 w-72 h-72 dot-grid opacity-15"></div>
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <!-- Left: Photo + decoration -->
+        <div class="reveal flex justify-center lg:justify-start">
+          <div class="relative">
+            <!-- Profile card -->
+            <div class="glass-strong rounded-3xl p-8 text-center glow-blue-sm" style="width:300px;">
+              <!-- Avatar -->
+              <div class="relative mx-auto mb-5" style="width:120px;height:120px;">
+                <img src="assets/foto-perfil.jpg" alt="Pedro Augusto" class="w-full h-full rounded-full object-cover border-2 border-white/10">
+                <div class="absolute -bottom-1 -right-1 w-8 h-8 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#10b981,#0ea5e9); border:2px solid #020817;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+              </div>
+              <h3 class="font-display font-800 text-white text-xl mb-1">Pedro Augusto</h3>
+              <p class="text-azure-400 text-sm mb-4">Desenvolvedor Web & IA</p>
+              <div class="flex justify-center gap-2 mb-5">
+                <span class="bg-azure-500/15 text-azure-400 text-xs px-3 py-1 rounded-full border border-azure-500/20">React</span>
+                <span class="bg-azure-500/15 text-azure-400 text-xs px-3 py-1 rounded-full border border-azure-500/20">Design</span>
+                <span class="bg-azure-500/15 text-azure-400 text-xs px-3 py-1 rounded-full border border-azure-500/20">IA</span>
+              </div>
+              <div class="grid grid-cols-2 gap-3 text-center">
+                <div class="glass rounded-xl p-3">
+                  <div class="font-display font-800 text-white text-xl">12+</div>
+                  <div class="text-slate-500 text-xs">Anos de tech</div>
+                </div>
+                <div class="glass rounded-xl p-3">
+                  <div class="font-display font-800 text-white text-xl">50+</div>
+                  <div class="text-slate-500 text-xs">Projetos</div>
+                </div>
+              </div>
+            </div>
+            <!-- Floating badges -->
+            <div class="absolute -top-4 -right-8 glass rounded-xl p-3 animate-float-delay">
+              <div class="text-xs">🎓 Profissional Formado</div>
+            </div>
+            <div class="absolute -bottom-4 -left-6 glass rounded-xl p-2.5" style="animation: float 7s ease-in-out 0.5s infinite;">
+              <div class="flex items-center gap-2">
+                <span class="text-xl">🤖</span>
+                <span class="text-xs text-slate-300">Seu Desenvolvedor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Text -->
+        <div class="reveal reveal-delay-2">
+          <span class="section-tag">Sobre mim</span>
+          <h2 class="font-display text-3xl md:text-4xl font-800 text-white mt-3 mb-5">
+            Paixão por <span class="gradient-text">tecnologia</span><br />há mais de 12 anos
+          </h2>
+          <p class="text-slate-400 leading-relaxed mb-5">
+            Sou apaixonado por tecnologia há mais de 12 anos. Sempre estive envolvido com criação de sites, blogs, produtos digitais e soluções para internet.
+          </p>
+          <p class="text-slate-400 leading-relaxed mb-5">
+            Sou formado em <strong class="text-slate-200">Bacharelado em Tecnologia da Informação</strong> e atualmente curso <strong class="text-slate-200">Bacharelado em Inteligência Artificial</strong>.
+          </p>
+          <p class="text-slate-400 leading-relaxed mb-8">
+            Meu objetivo é ajudar empresas e empreendedores a transformarem suas ideias em <strong class="text-azure-400">presença digital profissional</strong>.
+          </p>
+
+          <!-- Timeline -->
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8); margin-top:2px;">1</div>
+              <div>
+                <p class="text-white font-semibold text-sm">Início na programação</p>
+                <p class="text-slate-500 text-xs">Primeiros sites e projetos digitais</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background:linear-gradient(135deg,#8b5cf6,#a78bfa); margin-top:2px;">2</div>
+              <div>
+                <p class="text-white font-semibold text-sm">Bacharelado em TI</p>
+                <p class="text-slate-500 text-xs">Formação sólida em tecnologia</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background:linear-gradient(135deg,#10b981,#34d399); margin-top:2px;">3</div>
+              <div>
+                <p class="text-white font-semibold text-sm">Especialização em IA</p>
+                <p class="text-slate-500 text-xs">Cursando Bacharelado em Inteligência Artificial</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background:linear-gradient(135deg,#fbbf24,#f59e0b); margin-top:2px;">4</div>
+              <div>
+                <p class="text-white font-semibold text-sm">50+ projetos entregues</p>
+                <p class="text-slate-500 text-xs">Transformando negócios locais em marcas digitais</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: PROCESSO DE CRIAÇÃO -->
+  <section id="processo" class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 grid-bg opacity-20"></div>
+    <div class="max-w-5xl mx-auto px-5">
+      <div class="text-center mb-14 reveal">
+        <span class="section-tag">Como funciona</span>
+        <h2 class="font-display text-3xl md:text-5xl font-800 text-white mt-3 mb-4">
+          Do Zero ao <span class="gradient-text">Ar em 5 Dias</span>
+        </h2>
+        <p class="text-slate-400 text-lg max-w-xl mx-auto">Processo simples e transparente do início ao fim.</p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="reveal reveal-delay-1 text-center">
+          <div class="relative mb-6">
+            <div class="w-16 h-16 rounded-2xl mx-auto flex items-center justify-center text-2xl glow-blue-sm" style="background:linear-gradient(135deg,rgba(14,165,233,0.2),rgba(14,165,233,0.1)); border:1px solid rgba(14,165,233,0.3);">💬</div>
+            <div class="hidden md:block absolute top-8 left-[calc(50%+32px)] right-0 h-px" style="background:linear-gradient(90deg,rgba(14,165,233,0.4),transparent);"></div>
+          </div>
+          <div class="glass rounded-xl p-4 border border-white/5">
+            <span class="text-xs text-azure-400 font-semibold">Passo 01</span>
+            <h3 class="font-display font-700 text-white text-sm mt-1 mb-2">Conversa</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">Entendemos seu negócio, objetivos e o que você precisa.</p>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2 text-center">
+          <div class="relative mb-6">
+            <div class="w-16 h-16 rounded-2xl mx-auto flex items-center justify-center text-2xl glow-blue-sm" style="background:linear-gradient(135deg,rgba(139,92,246,0.2),rgba(139,92,246,0.1)); border:1px solid rgba(139,92,246,0.3);">🎨</div>
+            <div class="hidden md:block absolute top-8 left-[calc(50%+32px)] right-0 h-px" style="background:linear-gradient(90deg,rgba(139,92,246,0.4),transparent);"></div>
+          </div>
+          <div class="glass rounded-xl p-4 border border-white/5">
+            <span class="text-xs text-purple-400 font-semibold">Passo 02</span>
+            <h3 class="font-display font-700 text-white text-sm mt-1 mb-2">Design</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">Criamos o layout moderno e aprovamos juntos cada detalhe.</p>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-3 text-center">
+          <div class="relative mb-6">
+            <div class="w-16 h-16 rounded-2xl mx-auto flex items-center justify-center text-2xl glow-blue-sm" style="background:linear-gradient(135deg,rgba(16,185,129,0.2),rgba(16,185,129,0.1)); border:1px solid rgba(16,185,129,0.3);">⚙️</div>
+            <div class="hidden md:block absolute top-8 left-[calc(50%+32px)] right-0 h-px" style="background:linear-gradient(90deg,rgba(16,185,129,0.4),transparent);"></div>
+          </div>
+          <div class="glass rounded-xl p-4 border border-white/5">
+            <span class="text-xs text-green-400 font-semibold">Passo 03</span>
+            <h3 class="font-display font-700 text-white text-sm mt-1 mb-2">Desenvolvimento</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">Desenvolvemos seu site com as melhores tecnologias.</p>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-4 text-center">
+          <div class="relative mb-6">
+            <div class="w-16 h-16 rounded-2xl mx-auto flex items-center justify-center text-2xl glow-blue-sm" style="background:linear-gradient(135deg,rgba(251,191,36,0.2),rgba(251,191,36,0.1)); border:1px solid rgba(251,191,36,0.3);">🚀</div>
+          </div>
+          <div class="glass rounded-xl p-4 border border-white/5">
+            <span class="text-xs text-yellow-400 font-semibold">Passo 04</span>
+            <h3 class="font-display font-700 text-white text-sm mt-1 mb-2">Publicação</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">Seu site vai ao ar e seu negócio entra no mundo digital.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: PLANOS E VALORES -->
+  <section id="planos" class="py-24 bg-mesh-2 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full" style="background:radial-gradient(ellipse 60% 50% at 50% 50%, rgba(14,165,233,0.06) 0%, transparent 70%);"></div>
+    <div class="max-w-5xl mx-auto px-5">
+      <div class="text-center mb-14 reveal">
+        <span class="section-tag">Investimento</span>
+        <h2 class="font-display text-3xl md:text-5xl font-800 text-white mt-3 mb-4">
+          Plano <span class="gradient-text">Especial</span>
+        </h2>
+        <p class="text-slate-400 text-lg max-w-xl mx-auto">Preço promocional por tempo limitado. Não perca essa oportunidade.</p>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="price-featured rounded-3xl p-8 md:p-12 w-full max-w-2xl reveal">
+          <!-- Badge -->
+          <div class="flex justify-center mb-6">
+            <span class="inline-flex items-center gap-2 bg-yellow-400/15 border border-yellow-400/30 text-yellow-300 text-sm font-700 font-display px-5 py-2 rounded-full">
+              🔥 PROMOÇÃO LIMITADA
+            </span>
+          </div>
+
+          <!-- Pricing -->
+          <div class="text-center mb-8">
+            <div class="text-slate-500 line-through text-lg mb-1">De: 12x de R$129,90</div>
+            <div class="text-slate-400 text-sm mb-2">Por apenas:</div>
+            <div class="flex items-end justify-center gap-2 mb-2">
+              <span class="text-slate-400 text-xl">12x de</span>
+              <span class="font-display font-800 gradient-text text-glow" style="font-size:4rem; line-height:1;">R$59</span>
+              <span class="font-display font-800 gradient-text text-4xl pb-2">,90</span>
+            </div>
+            <p class="text-slate-500 text-sm">ou R$599 à vista com desconto</p>
+          </div>
+
+          <!-- Benefits -->
+          <div class="grid sm:grid-cols-2 gap-3 mb-8">
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8);">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-slate-300 text-sm">Landing Page Profissional</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8);">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-slate-300 text-sm">Design Moderno</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8);">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-slate-300 text-sm">Responsivo (mobile)</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8);">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-slate-300 text-sm">Botão WhatsApp</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8);">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-slate-300 text-sm">SEO Básico</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8);">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-slate-300 text-sm">Hospedagem Auxiliada</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:linear-gradient(135deg,#10b981,#34d399);">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-green-300 text-sm font-medium">Entrega em até 5 dias</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:linear-gradient(135deg,#10b981,#34d399);">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="text-green-300 text-sm font-medium">Suporte incluso</span>
+            </div>
+          </div>
+
+          <a href="#contato" class="btn-primary w-full py-4 rounded-2xl text-base text-center block font-display font-700 animate-pulse-glow">
+            🚀 Quero Meu Site Agora
+          </a>
+          <p class="text-center text-slate-500 text-xs mt-3">Promoção válida por tempo limitado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: PORTFÓLIO -->
+  <section id="portfolio" class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 grid-bg opacity-20"></div>
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center mb-14 reveal">
+        <span class="section-tag">Portfólio</span>
+        <h2 class="font-display text-3xl md:text-5xl font-800 text-white mt-3 mb-4">
+          Projetos que <span class="gradient-text">Geram Resultados</span>
+        </h2>
+        <p class="text-slate-400 text-lg max-w-xl mx-auto">Exemplos reais do que podemos criar para o seu negócio.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Portfolio cards with colored mockups -->
+        <div class="portfolio-card glass card-hover rounded-2xl overflow-hidden border border-white/5 reveal reveal-delay-1">
+          <div class="h-44 relative" style="background:linear-gradient(135deg,#1a0535,#0c1a3d);">
+            <!-- Decorative browser mockup -->
+            <div class="absolute inset-3 glass rounded-xl overflow-hidden border border-white/10">
+              <div class="h-5 bg-white/5 flex items-center px-2 gap-1">
+                <div class="w-1.5 h-1.5 rounded-full bg-red-400/60"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-yellow-400/60"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-green-400/60"></div>
+              </div>
+              <div class="p-3" style="background:linear-gradient(135deg,#0a1628,#1a2a4a);">
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="text-2xl">🏋️</div>
+                  <div>
+                    <div class="h-2 rounded w-16 mb-1" style="background:linear-gradient(90deg,#0ea5e9,#38bdf8);"></div>
+                    <div class="h-1.5 bg-slate-700/60 rounded w-12"></div>
+                  </div>
+                </div>
+                <div class="h-1.5 bg-slate-700/50 rounded mb-1 w-full"></div>
+                <div class="h-1.5 bg-slate-700/40 rounded mb-3 w-3/4"></div>
+                <div class="h-6 rounded" style="background:linear-gradient(90deg,#0ea5e9,#38bdf8); width:60%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-5">
+            <span class="text-xs text-azure-400 font-medium">Academia</span>
+            <h3 class="font-display font-700 text-white text-base mt-1">AcadeFit Pro</h3>
+            <p class="text-slate-500 text-xs mt-1">Landing page para academia com matrículas online e planos.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card glass card-hover rounded-2xl overflow-hidden border border-white/5 reveal reveal-delay-2">
+          <div class="h-44 relative" style="background:linear-gradient(135deg,#1f0a0a,#1a1a00);">
+            <div class="absolute inset-3 glass rounded-xl overflow-hidden border border-white/10">
+              <div class="h-5 bg-white/5 flex items-center px-2 gap-1">
+                <div class="w-1.5 h-1.5 rounded-full bg-red-400/60"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-yellow-400/60"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-green-400/60"></div>
+              </div>
+              <div class="p-3" style="background:linear-gradient(135deg,#1a0a00,#2a1500);">
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="text-2xl">🍕</div>
+                  <div>
+                    <div class="h-2 rounded w-16 mb-1" style="background:linear-gradient(90deg,#f59e0b,#ef4444);"></div>
+                    <div class="h-1.5 bg-slate-700/60 rounded w-12"></div>
+                  </div>
+                </div>
+                <div class="h-1.5 bg-slate-700/50 rounded mb-1 w-full"></div>
+                <div class="h-1.5 bg-slate-700/40 rounded mb-3 w-2/3"></div>
+                <div class="h-6 rounded" style="background:linear-gradient(90deg,#f59e0b,#ef4444); width:70%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-5">
+            <span class="text-xs text-yellow-400 font-medium">Pizzaria</span>
+            <h3 class="font-display font-700 text-white text-base mt-1">PizzaExpress Delivery</h3>
+            <p class="text-slate-500 text-xs mt-1">Site de delivery com cardápio online e pedidos via WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card glass card-hover rounded-2xl overflow-hidden border border-white/5 reveal reveal-delay-3">
+          <div class="h-44 relative" style="background:linear-gradient(135deg,#050a1a,#0a1525);">
+            <div class="absolute inset-3 glass rounded-xl overflow-hidden border border-white/10">
+              <div class="h-5 bg-white/5 flex items-center px-2 gap-1">
+                <div class="w-1.5 h-1.5 rounded-full bg-red-400/60"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-yellow-400/60"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-green-400/60"></div>
+              </div>
+              <div class="p-3" style="background:linear-gradient(135deg,#050e1f,#0a1a35);">
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="text-2xl">🏨</div>
+                  <div>
+                    <div class="h-2 rounded w-16 mb-1" style="background:linear-gradient(90deg,#fbbf24,#f59e0b);"></div>
+                    <div class="h-1.5 bg-slate-700/60 rounded w-12"></div>
+                  </div>
+                </div>
+                <div class="h-1.5 bg-slate-700/50 rounded mb-1 w-full"></div>
+                <div class="h-1.5 bg-slate-700/40 rounded mb-3 w-3/4"></div>
+                <div class="h-6 rounded" style="background:linear-gradient(90deg,#fbbf24,#f59e0b); width:55%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-5">
+            <span class="text-xs text-yellow-300 font-medium">Hotel</span>
+            <h3 class="font-display font-700 text-white text-base mt-1">Hotel Premium Rio</h3>
+            <p class="text-slate-500 text-xs mt-1">Site luxuoso com reservas online e apresentação de quartos.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card glass card-hover rounded-2xl overflow-hidden border border-white/5 reveal reveal-delay-1">
+          <div class="h-44 relative" style="background:linear-gradient(135deg,#1a0530,#0a0025);">
+            <div class="absolute inset-3 glass rounded-xl overflow-hidden border border-white/10">
+              <div class="h-5 bg-white/5 flex items-center px-2 gap-1">
+                <div class="w-1.5 h-1.5 rounded-full bg-red-400/60"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-yellow-400/60"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-green-400/60"></div>
+              </div>
+              <div class="p-3" style="background:linear-gradient(135deg,#120030,#200045);">
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="text-2xl">👗</div>
+                  <div>
+                    <div class="h-2 rounded w-16 mb-1" style="background:linear-gradient(90deg,#ec4899,#a855f7);"></div>
+                    <div class="h-1.5 bg-slate-700/60 rounded w-12"></div>
+                  </div>
+                </div>
+                <div class="h-1.5 bg-slate-700/50 rounded mb-1 w-full"></div>
+                <div class="h-1.5 bg-slate-700/40 rounded mb-3 w-1/2"></div>
+                <div class="h-6 rounded" style="background:linear-gradient(90deg,#ec4899,#a855f7); width:65%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-5">
+            <span class="text-xs text-pink-400 font-medium">Moda</span>
+            <h3 class="font-display font-700 text-white text-base mt-1">Loja Fashion Store</h3>
+            <p class="text-slate-500 text-xs mt-1">Catálogo digital elegante com link para loja e WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card glass card-hover rounded-2xl overflow-hidden border border-white/5 reveal reveal-delay-2">
+          <div class="h-44 relative" style="background:linear-gradient(135deg,#001a15,#00100a);">
+            <div class="absolute inset-3 glass rounded-xl overflow-hidden border border-white/10">
+              <div class="h-5 bg-white/5 flex items-center px-2 gap-1">
+                <div class="w-1.5 h-1.5 rounded-full bg-red-400/60"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-yellow-400/60"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-green-400/60"></div>
+              </div>
+              <div class="p-3" style="background:linear-gradient(135deg,#001a10,#002a18);">
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="text-2xl">💆</div>
+                  <div>
+                    <div class="h-2 rounded w-16 mb-1" style="background:linear-gradient(90deg,#10b981,#34d399);"></div>
+                    <div class="h-1.5 bg-slate-700/60 rounded w-12"></div>
+                  </div>
+                </div>
+                <div class="h-1.5 bg-slate-700/50 rounded mb-1 w-full"></div>
+                <div class="h-1.5 bg-slate-700/40 rounded mb-3 w-2/3"></div>
+                <div class="h-6 rounded" style="background:linear-gradient(90deg,#10b981,#34d399); width:60%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-5">
+            <span class="text-xs text-green-400 font-medium">Saúde</span>
+            <h3 class="font-display font-700 text-white text-base mt-1">SkinClinic Estética</h3>
+            <p class="text-slate-500 text-xs mt-1">Site para clínica com procedimentos e agendamento online.</p>
+          </div>
+        </div>
+
+        <!-- CTA card -->
+        <div class="glass card-hover rounded-2xl border border-dashed flex items-center justify-center p-8 reveal reveal-delay-3" style="border-color:rgba(14,165,233,0.3); min-height:200px;">
+          <div class="text-center">
+            <div class="text-4xl mb-3">✨</div>
+            <h3 class="font-display font-700 text-azure-400 text-base mb-2">Seu projeto aqui</h3>
+            <p class="text-slate-500 text-sm mb-4">Poderia ser o seu negócio nessa galeria</p>
+            <a href="#contato" class="btn-primary px-5 py-2.5 rounded-full text-sm inline-block">Começar agora</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: DEPOIMENTOS -->
+  <section id="depoimentos" class="py-24 bg-mesh-2 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="text-center mb-14 reveal">
+        <span class="section-tag">Depoimentos</span>
+        <h2 class="font-display text-3xl md:text-5xl font-800 text-white mt-3 mb-4">
+          O que os <span class="gradient-text">Clientes Dizem</span>
+        </h2>
+        <p class="text-slate-400 text-lg max-w-xl mx-auto">Resultados reais de negócios que transformamos digitalmente.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass card-hover rounded-2xl p-6 border border-white/5 reveal reveal-delay-1">
+          <div class="flex gap-0.5 mb-4">
+            <span class="star">★★★★★</span>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-5">
+            "Meu movimento <strong class="text-white">aumentou muito</strong> depois do site. Os clientes me encontram no Google e ligam todo dia. Não imaginava que faria tanta diferença!"
+          </p>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white" style="background:linear-gradient(135deg,#ef4444,#f59e0b);">M</div>
+            <div>
+              <p class="text-white text-sm font-semibold">Marcos Oliveira</p>
+              <p class="text-slate-500 text-xs">Dono – AcadeFit Rio Claro</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass card-hover rounded-2xl p-6 border border-white/5 reveal reveal-delay-2" style="border-color:rgba(14,165,233,0.2);">
+          <div class="flex gap-0.5 mb-4">
+            <span class="star">★★★★★</span>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-5">
+            "A aparência da minha empresa ficou <strong class="text-white">muito mais profissional</strong>. Clientes novos sempre comentam que viram o site. A credibilidade mudou completamente."
+          </p>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white" style="background:linear-gradient(135deg,#10b981,#0ea5e9);">J</div>
+            <div>
+              <p class="text-white text-sm font-semibold">Juliana Santos</p>
+              <p class="text-slate-500 text-xs">Proprietária – Salão da Ju</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass card-hover rounded-2xl p-6 border border-white/5 reveal reveal-delay-3">
+          <div class="flex gap-0.5 mb-4">
+            <span class="star">★★★★★</span>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-5">
+            "Atendimento rápido e <strong class="text-white">resultado incrível</strong>. Em 4 dias já estava tudo no ar, com meu cardápio online e botão do WhatsApp. Recomendo demais!"
+          </p>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white" style="background:linear-gradient(135deg,#8b5cf6,#ec4899);">A</div>
+            <div>
+              <p class="text-white text-sm font-semibold">André Costa</p>
+              <p class="text-slate-500 text-xs">Dono – PizzaExpress Delivery</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass card-hover rounded-2xl p-6 border border-white/5 reveal reveal-delay-1">
+          <div class="flex gap-0.5 mb-4">
+            <span class="star">★★★★★</span>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-5">
+            "Antes ninguém me achava online. Hoje sou o <strong class="text-white">primeiro resultado do Google</strong> na minha cidade. O site pagou o investimento em menos de 1 mês."
+          </p>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white" style="background:linear-gradient(135deg,#fbbf24,#f59e0b);">R</div>
+            <div>
+              <p class="text-white text-sm font-semibold">Roberto Lima</p>
+              <p class="text-slate-500 text-xs">Dono – Barbearia King</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass card-hover rounded-2xl p-6 border border-white/5 reveal reveal-delay-2">
+          <div class="flex gap-0.5 mb-4">
+            <span class="star">★★★★★</span>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-5">
+            "Minha clínica ganhou <strong class="text-white">50% mais agendamentos</strong> em 2 meses. Os pacientes chegam já sabendo tudo sobre os procedimentos. Vale cada centavo."
+          </p>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white" style="background:linear-gradient(135deg,#10b981,#34d399);">C</div>
+            <div>
+              <p class="text-white text-sm font-semibold">Dra. Carla Mendes</p>
+              <p class="text-slate-500 text-xs">Diretora – SkinClinic</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass card-hover rounded-2xl p-6 border border-white/5 reveal reveal-delay-3">
+          <div class="flex gap-0.5 mb-4">
+            <span class="star">★★★★★</span>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-5">
+            "Superou todas as minhas expectativas! O site ficou <strong class="text-white">lindo e profissional</strong>. O Pedro entendeu perfeitamente o que eu queria para minha loja."
+          </p>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white" style="background:linear-gradient(135deg,#ec4899,#a855f7);">F</div>
+            <div>
+              <p class="text-white text-sm font-semibold">Fernanda Alves</p>
+              <p class="text-slate-500 text-xs">Proprietária – Meu Docinho</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: FAQ -->
+  <section id="faq" class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 grid-bg opacity-20"></div>
+    <div class="max-w-3xl mx-auto px-5">
+      <div class="text-center mb-14 reveal">
+        <span class="section-tag">Dúvidas</span>
+        <h2 class="font-display text-3xl md:text-5xl font-800 text-white mt-3 mb-4">
+          Perguntas <span class="gradient-text">Frequentes</span>
+        </h2>
+        <p class="text-slate-400 text-lg max-w-xl mx-auto">Tudo que você precisa saber antes de começar.</p>
+      </div>
+
+      <div class="space-y-3 reveal">
+        <div class="faq-item glass rounded-2xl border border-white/5 overflow-hidden card-hover">
+          <details>
+            <summary class="flex items-center justify-between p-5 cursor-pointer">
+              <span class="font-display font-600 text-white text-sm md:text-base">Quanto tempo leva para ficar pronto?</span>
+              <span class="faq-icon text-azure-400 text-xl flex-shrink-0 ml-3">+</span>
+            </summary>
+            <div class="px-5 pb-5">
+              <p class="text-slate-400 text-sm leading-relaxed">O prazo médio de entrega é de <strong class="text-white">3 a 5 dias úteis</strong> após a aprovação do briefing e conteúdo. Projetos mais complexos podem levar até 7 dias. Trabalhamos com agilidade sem abrir mão da qualidade.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-item glass rounded-2xl border border-white/5 overflow-hidden card-hover">
+          <details>
+            <summary class="flex items-center justify-between p-5 cursor-pointer">
+              <span class="font-display font-600 text-white text-sm md:text-base">O site funciona no celular?</span>
+              <span class="faq-icon text-azure-400 text-xl flex-shrink-0 ml-3">+</span>
+            </summary>
+            <div class="px-5 pb-5">
+              <p class="text-slate-400 text-sm leading-relaxed"><strong class="text-white">Sim, 100%!</strong> Todos os sites são desenvolvidos com design responsivo, adaptando-se perfeitamente a qualquer tamanho de tela: celular, tablet e computador. A experiência mobile é prioridade.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-item glass rounded-2xl border border-white/5 overflow-hidden card-hover">
+          <details>
+            <summary class="flex items-center justify-between p-5 cursor-pointer">
+              <span class="font-display font-600 text-white text-sm md:text-base">Vocês ajudam com domínio e hospedagem?</span>
+              <span class="faq-icon text-azure-400 text-xl flex-shrink-0 ml-3">+</span>
+            </summary>
+            <div class="px-5 pb-5">
+              <p class="text-slate-400 text-sm leading-relaxed"><strong class="text-white">Sim!</strong> Auxiliamos em todo o processo de registro de domínio (o nome do seu site) e configuração de hospedagem. Você não precisa saber nada de técnico — cuidamos de tudo para você.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-item glass rounded-2xl border border-white/5 overflow-hidden card-hover">
+          <details>
+            <summary class="flex items-center justify-between p-5 cursor-pointer">
+              <span class="font-display font-600 text-white text-sm md:text-base">Posso atualizar o site depois?</span>
+              <span class="faq-icon text-azure-400 text-xl flex-shrink-0 ml-3">+</span>
+            </summary>
+            <div class="px-5 pb-5">
+              <p class="text-slate-400 text-sm leading-relaxed"><strong class="text-white">Sim!</strong> Você pode solicitar atualizações sempre que precisar. Pequenas alterações de texto e imagens estão incluídas no suporte. Para mudanças maiores no design, combinamos um custo justo.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="faq-item glass rounded-2xl border border-white/5 overflow-hidden card-hover">
+          <details>
+            <summary class="flex items-center justify-between p-5 cursor-pointer">
+              <span class="font-display font-600 text-white text-sm md:text-base">Tem suporte após a entrega?</span>
+              <span class="faq-icon text-azure-400 text-xl flex-shrink-0 ml-3">+</span>
+            </summary>
+            <div class="px-5 pb-5">
+              <p class="text-slate-400 text-sm leading-relaxed"><strong class="text-white">Claro!</strong> Oferecemos suporte via WhatsApp. Estamos disponíveis para tirar dúvidas, corrigir qualquer problema e garantir que seu site funcione perfeitamente. Você nunca fica sozinho.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="contato" class="py-28 relative overflow-hidden">
+    <!-- Intense background -->
+    <div class="absolute inset-0" style="background:radial-gradient(ellipse 80% 70% at 50% 50%, rgba(14,165,233,0.12) 0%, rgba(139,92,246,0.06) 50%, transparent 70%);"></div>
+    <div class="absolute inset-0 grid-bg opacity-15"></div>
+    <!-- Top glow line -->
+    <div class="absolute top-0 left-0 right-0 h-px" style="background:linear-gradient(90deg, transparent, rgba(14,165,233,0.5), rgba(139,92,246,0.4), transparent);"></div>
+
+    <div class="max-w-4xl mx-auto px-5 text-center reveal">
+      <span class="section-tag">Pronto para começar?</span>
+      <h2 class="font-display text-4xl md:text-6xl font-800 text-white mt-4 mb-6 leading-tight">
+        O Próximo Negócio de<br />
+        <span class="gradient-text text-glow">Sucesso na Internet</span><br />
+        Pode Ser o <span class="text-white">Seu.</span>
+      </h2>
+      <p class="text-slate-400 text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed">
+        Não deixe sua empresa invisível. Tenha uma <strong class="text-slate-200">presença digital profissional</strong> hoje mesmo.
+      </p>
+
+      <!-- Stats row -->
+      <div class="grid grid-cols-3 gap-4 max-w-xl mx-auto mb-10">
+        <div class="glass rounded-2xl p-4 border border-white/5">
+          <div class="font-display font-800 text-2xl md:text-3xl gradient-text">5</div>
+          <div class="text-slate-500 text-xs mt-1">dias de entrega</div>
+        </div>
+        <div class="glass rounded-2xl p-4 border border-white/5">
+          <div class="font-display font-800 text-2xl md:text-3xl gradient-text">50+</div>
+          <div class="text-slate-500 text-xs mt-1">projetos entregues</div>
+        </div>
+        <div class="glass rounded-2xl p-4 border border-white/5">
+          <div class="font-display font-800 text-2xl md:text-3xl gradient-text">100%</div>
+          <div class="text-slate-500 text-xs mt-1">satisfação</div>
+        </div>
+      </div>
+
+      <a href="https://wa.me/5512992222619?text=Olá%20Pedro!%20Quero%20saber%20mais%20sobre%20criar%20meu%20site%20profissional." target="_blank" class="btn-primary inline-flex items-center gap-3 px-10 py-5 rounded-full text-lg font-display font-700 animate-pulse-glow mb-4">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Falar no WhatsApp
+      </a>
+      <p class="text-slate-500 text-sm">Resposta em até 1 hora • Sem compromisso</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="relative border-t py-12" style="border-color:rgba(255,255,255,0.06); background:#020817;">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <span class="font-display font-700 text-white text-lg">Pedro<span class="gradient-text">Dev</span></span>
+          </div>
+          <p class="text-slate-500 text-sm leading-relaxed max-w-xs">Pedro Augusto da Silva Souza — Desenvolvedor Web e especialista em presença digital para o seu negócio.</p>
+        </div>
+        <div>
+          <h4 class="font-display font-700 text-white text-sm mb-4">Links Rápidos</h4>
+          <div class="flex flex-col gap-2">
+            <a href="#servicos" class="text-slate-500 hover:text-azure-400 text-sm transition-colors">Serviços</a>
+            <a href="#planos" class="text-slate-500 hover:text-azure-400 text-sm transition-colors">Planos</a>
+            <a href="#portfolio" class="text-slate-500 hover:text-azure-400 text-sm transition-colors">Portfólio</a>
+            <a href="#sobre" class="text-slate-500 hover:text-azure-400 text-sm transition-colors">Sobre</a>
+            <a href="#faq" class="text-slate-500 hover:text-azure-400 text-sm transition-colors">FAQ</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-display font-700 text-white text-sm mb-4">Contato</h4>
+          <div class="flex flex-col gap-3">
+            <a href="https://wa.me/5512992222619" target="_blank" class="flex items-center gap-3 text-slate-500 hover:text-white transition-colors text-sm">
+              <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:rgba(37,211,102,0.15);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              (12) 99222-2619
+            </a>
+            <a href="mailto:pedrobn64@hotmail.com" class="flex items-center gap-3 text-slate-500 hover:text-white transition-colors text-sm">
+              <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:rgba(14,165,233,0.15);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              pedrobn64@hotmail.com
+            </a>
+            <!-- Social -->
+            <div class="flex gap-2 mt-2">
+              <a href="#" class="w-8 h-8 glass rounded-lg flex items-center justify-center hover:border-azure-500/40 transition-all text-slate-400 hover:text-white" title="Instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="w-8 h-8 glass rounded-lg flex items-center justify-center hover:border-azure-500/40 transition-all text-slate-400 hover:text-white" title="LinkedIn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#" class="w-8 h-8 glass rounded-lg flex items-center justify-center hover:border-azure-500/40 transition-all text-slate-400 hover:text-white" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-6 border-t text-center" style="border-color:rgba(255,255,255,0.05);">
+        <p class="text-slate-600 text-xs">© 2022-2027 Pedro Augusto da Silva Souza. Todos os direitos reservados. Desenvolvido pela Encontra-Dev.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/5512992222619?text=Olá%20Pedro!%20Quero%20saber%20mais%20sobre%20criar%20meu%20site%20profissional." target="_blank" class="whatsapp-btn fixed bottom-6 right-6 w-14 h-14 rounded-full flex items-center justify-center z-50" aria-label="WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
